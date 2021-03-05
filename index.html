@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>FakeCatSnack!</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/83879d4d10.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Hammersmith+One&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header">
+    <nav class="navbar" id="nav-bar">
+      <div class="brand">
+        <a href="#home" class="nav-logo">FakeCatSnack!</a>
+      </div>
+<div href="#" class="toggle-button">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#products" class="nav-link">About</a></li>
+          <li><a href="#prices" class="nav-link">Prices</a></li>
+          <li><a href="#contacts" class="nav-link">Contact Us</a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <div id="home">
+      <img src="cat1.png" alt="" id="header-img">
+    </div>
+
+  </header>
+
+  <main>
+
+    <section id="products">
+      <h2>About Our Product</h2>
+      <div class="products">
+        <div class="p">
+          <i class="fas fa-tooth fa-3x"></i>
+          <p>Crunchy treat that helps clean your cat’s teeth, reduce tartar buildup and freshen breath. </p>
+        </div>
+        <div class="p">
+          <i class="fas fa-heartbeat fa-3x"></i>
+          <p>Comprised of natural ingredients plus added vitamins, minerals and other nutrients.
+            Nutritionally complete and balanced treat for kitten and adult cat.</p>
+        </div>
+        <div class="p">
+          <i class="fas fa-fish fa-3x"></i>
+          <p>Absolutely Grain Free! We know what is best for your furriend. Made with no artificial flavors or preservatives.</p>
+        </div>
+        <div class="p">
+          <i class="fas fa-weight fa-3x"></i>
+          <p>Each treat contains fewer than 2 calories, so your cat can enjoy more, and you don’t have to feel guilty about giving more!</p>
+        </div>
+      </div>
+      <video src="" id="video"></video>
+    </section>
+
+    <section id="prices">
+      <h2>Our Prices are super competitive </h2>
+      <div class="adv">
+        <h3> More you buy less you spend! One Package costs only 3£!</h3>
+        <h3>These same prices apply in all our stores.</h3>
+      </div>
+
+      <div class="div-prices">
+        <div class="prices">
+          <p class='prices-p'><i class="fas fa-cookie-bite fa-3x prices-i"></i><i class="fas fa-times fa-3x prices-i"></i><span class="num">2</span><i class="fas fa-equals fa-3x prices-i"></i><span class="num">5£</span><span class="span2 num">6£</span></p>
+          <p class='description-price'>If you buy two packages the price is 5£ instead of 6£!</p>
+        </div>
+        <div class="prices">
+          <p class='prices-p'><i class="fas fa-cookie-bite fa-3x prices-i"></i><i class="fas fa-times fa-3x prices-i"></i><span class="num">4</span><i class="fas fa-equals fa-3x prices-i"></i><span class="num">10£</span><span class="span2 num">12£</span></p>
+          <p class='description-price'>If you buy four packages the price is 10£ instead of 12£!</p>
+        </div>
+        <div class="prices">
+          <p class='prices-p'><i class="fas fa-cookie-bite fa-3x prices-i"></i><i class="fas fa-times fa-3x prices-i"></i><span class="num">10</span><i class="fas fa-equals fa-3x prices-i"></i><span class="num">25£</span><span class="span2 num">30£</span></p>
+          <p class='description-price'>If you buy ten packages the price is 25£ instead of 30£!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2>Contact Us</h2>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <div class="email direction">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="Your E-mail" required>
+        </div>
+        <div class="div-textarea direction">
+          <label for="textarea">Write to us any request or just say "Hi!":</label>
+          <textarea name="textarea" rows="8" cols="80" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">Enter here your message...</textarea>
+        </div>
+        <input type="submit" id="submit">
+      </form>
+    </section>
+
+
+  </main>
+  <footer>
+    <div class="grid-container">
+      <div class="social">
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="developed">
+    <p> <a href="#home" class="logo-small">FakeCatSnack!</a>: Developed with HTML5, CSS3 and few JS.</p>
+    </div>
+  </footer>
+
+
+
+
+  <script type="text/javascript">
+
+    const toggleButton=document.getElementsByClassName('toggle-button')[0];
+    const navLinks= document.getElementsByClassName('nav-links')[0];
+
+    toggleButton.addEventListener('click', ()=>navLinks.classList.toggle('active'));
+  </script>
+</body>
+</html>
